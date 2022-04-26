@@ -1,4 +1,4 @@
-# GROUP: 123456 - lab 2 - variant 1
+# GROUP: 123456 - lab 1 - variant 1
 
 Author:
 
@@ -40,8 +40,12 @@ Donghao Guo(guohaodong@hdu.edu.cn) -- runs the tests.
 
 ## Changelog
 
-- 26.04.2022 - 0
+- 14.04.2022 - 0
   - Initial
+- 18.04.2022 - 1
+  - First Modification
+- 24.04.2022 - 2
+  - Second Modification
 
 ## Design notes
 
