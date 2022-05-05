@@ -83,7 +83,7 @@ class unrolled_linked_list_test(unittest.TestCase):
             newL.append(x)
         self.assertEqual(newL, testL)
 
-    def test_contains(self):
+    def test_member(self):
         L = UnrolledLinkedList()
         L.append(1)
         L.append(2)

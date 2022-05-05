@@ -130,7 +130,7 @@ class UnrolledLinkedList():
             yield self[i]
             i = i - 1
 
-    def __contains__(self, obj):
+    def __member__(self, obj):
         for i in self:
             if i == obj:
                 return True
