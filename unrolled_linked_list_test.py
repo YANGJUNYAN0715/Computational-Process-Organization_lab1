@@ -46,7 +46,7 @@ class unrolled_linked_list_test(unittest.TestCase):
         del L2[0]
         del L2[1]
         self.assertEqual(str(L), '{[%d]}' % b)
-        self.assertEqual(str(L2)==str(L),True)
+        self.assertEqual(str(L2) == str(L), True)
 
     @settings(max_examples=10)
     @given(a=st.integers(), b=st.integers())
@@ -111,12 +111,13 @@ class unrolled_linked_list_test(unittest.TestCase):
         self.assertEqual(c in L, True)
 
     @settings(max_examples=10)
-    @given(a=st.integers(), b=st.integers(), c=st.integers(), d=st.integers(), e=st.integers(), f=st.integers(),
-           g=st.integers())
+    @given(a=st.integers(), b=st.integers(), c=st.integers(), d=st.integers(),
+           e=st.integers(), f=st.integers(), g=st.integers())
     def test_variable(self, a, b, c, d, e, f, g):
         L = UnrolledLinkedList()
         L.append(a).append(b).append(c).append(d).append(e).append(f).append(g)
-        self.assertEqual(str(L), '{[%d, %d], [%d, %d], [%d, %d, %d]}' % (a, b, c, d, e, f, g))
+        self.assertEqual(str(L), '{[%d, %d], [%d, %d], [%d, %d, %d]}'
+                         % (a, b, c, d, e, f, g))
 
     @settings(max_examples=10)
     @given(a=st.integers(), b=st.integers(), c=st.integers(), d=st.integers())
@@ -143,4 +144,4 @@ class unrolled_linked_list_test(unittest.TestCase):
         L1 = UnrolledLinkedList().append(1).append(5)
         L2 = UnrolledLinkedList().append(3).append(9)
         self.assertEqual(str(L1.concat(L2)), '{[1, 3, 5, 9]}')
-        self.assertEqual(str(L1.concat(L2)),str(L2.concat(L1)))
+        self.assertEqual(str(L1.concat(L2)), str(L2.concat(L1)))
