@@ -136,7 +136,7 @@ class unrolled_linked_list_test(unittest.TestCase):
         L.append(2)
         L.append(3)
         self.assertEqual(str(L.filter(is_even)), '{[2]}')
-        self.assertEqual(str(L.filter(is_odd)),'{[1, 3]}')
+        self.assertEqual(str(L.filter(is_odd)), '{[1, 3]}')
 
     def test_concat(self):
         L1 = UnrolledLinkedList()
@@ -145,5 +145,6 @@ class unrolled_linked_list_test(unittest.TestCase):
         L2 = UnrolledLinkedList()
         L2.append(5)
         L2.append(3)
-        self.assertEqual(str(L1.concat(L2)),'{[1, 3, 5, 9]}')
+        self.assertEqual(str(L1.concat(L2)), '{[1, 3, 5, 9]}')
+
 

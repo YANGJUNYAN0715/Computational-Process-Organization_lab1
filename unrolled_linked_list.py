@@ -168,14 +168,14 @@ class UnrolledLinkedList():
             self.tail.arr.append(data)
         self.length = self.length + 1
 
-    def filter(self,function):
+    def filter(self, function):
         L = UnrolledLinkedList()
         for i in self:
             if function(i):
                 L.append(i)
         return L
 
-    def concat(self,other):
+    def concat(self, other):
         temp = []
         if len(self.to_list()) == 0:
             return self
