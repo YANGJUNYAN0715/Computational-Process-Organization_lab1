@@ -167,6 +167,7 @@ class UnrolledLinkedList():
             self.tail = newNode
             self.tail.arr.append(data)
         self.length = self.length + 1
+        return self
 
     def filter(self, function):
         L = UnrolledLinkedList()
