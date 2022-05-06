@@ -146,6 +146,3 @@ class unrolled_linked_list_test(unittest.TestCase):
         L2.append(5)
         L2.append(3)
         self.assertEqual(str(L1.concat(L2)), '{[1, 3, 5, 9]}')
-
-
-
