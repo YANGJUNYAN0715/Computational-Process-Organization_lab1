@@ -30,6 +30,8 @@ class with `hello` and `add` features. Stateless.
 - test: `test_variable`
 - test: `test_to_list`
 - test: `test_from_list`
+- test: `test_filter`
+- test: `test_concat`
 
 ## Contribution
 
@@ -45,7 +47,7 @@ Donghao Guo(guohaodong@hdu.edu.cn) -- runs the tests.
   - Pass the workflow
 - 24.04.2022 - 2
   - Modify the structure and update README.md
-- 05.05.2022 - 3
+- 06.05.2022 - 3
   - Add some functions
 
 ## Design notes
