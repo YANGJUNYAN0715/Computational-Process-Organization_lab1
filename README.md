@@ -30,8 +30,7 @@ class with `hello` and `add` features. Stateless.
 - test: `test_variable`
 - test: `test_to_list`
 - test: `test_from_list`
-- test: `test_filter`
-- test: ``
+
 
 ## Contribution
 
