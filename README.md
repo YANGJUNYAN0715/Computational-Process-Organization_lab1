@@ -31,7 +31,6 @@ class with `hello` and `add` features. Stateless.
 - test: `test_to_list`
 - test: `test_from_list`
 
-
 ## Contribution
 
 Junyan Yang(1310204834@qq.com) -- writes the main code of this lab
