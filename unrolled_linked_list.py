@@ -167,3 +167,23 @@ class UnrolledLinkedList():
             self.tail = newNode
             self.tail.arr.append(data)
         self.length = self.length + 1
+
+    def filter(self,function):
+        L = UnrolledLinkedList()
+        for i in self:
+            if function(i):
+                L.append(i)
+        return L
+
+    def concat(self,other):
+        temp = []
+        if len(self.to_list()) == 0:
+            return self
+        if len(other.to_list()) == 0:
+            return other
+
+        temp += self.to_list()
+        temp += other.to_list()
+        temp.sort()
+        res = self.from_list(temp)
+        return res

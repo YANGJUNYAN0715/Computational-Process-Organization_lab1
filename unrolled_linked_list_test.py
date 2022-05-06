@@ -3,6 +3,14 @@ import unittest
 from unrolled_linked_list import UnrolledLinkedList
 
 
+def is_even(x):
+    return x % 2 == 0
+
+
+def is_odd(x):
+    return x % 2 == 1
+
+
 class unrolled_linked_list_test(unittest.TestCase):
     def test_default_node_capacity(self):
         L = UnrolledLinkedList()
@@ -121,3 +129,20 @@ class unrolled_linked_list_test(unittest.TestCase):
         list1 = [1, 2, 3]
         L = UnrolledLinkedList()
         self.assertEqual(str(L.from_list(list1)), '{[1, 2, 3]}')
+
+    def test_filter(self):
+        L = UnrolledLinkedList()
+        L.append(1)
+        L.append(2)
+        L.append(3)
+        self.assertEqual(str(L.filter(is_even)), '{[2]}')
+        self.assertEqual(str(L.filter(is_odd)),'{[1, 3]}')
+
+    def test_concat(self):
+        L1 = UnrolledLinkedList()
+        L1.append(1)
+        L1.append(9)
+        L2 = UnrolledLinkedList()
+        L2.append(5)
+        L2.append(3)
+        self.assertEqual(str(L1.concat(L2)),'{[1, 3, 5, 9]}')
