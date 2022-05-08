@@ -170,7 +170,8 @@ class unrolled_linked_list_test(unittest.TestCase):
         L1 = UnrolledLinkedList().append(d).append(a)
         L2 = UnrolledLinkedList().append(b).append(c)
         # because the concat function will make them sorted
-        self.assertEqual(str(L1.concat(L2)), '{[%d, %d, %d, %d]}' % (a, b, c, d))
+        self.assertEqual(str(L1.concat(L2)), '{[%d, %d, %d, %d]}'
+                         % (a, b, c, d))
         self.assertEqual(str(L1.concat(L2)), str(L2.concat(L1)))
 
     def test_empty_function(self):

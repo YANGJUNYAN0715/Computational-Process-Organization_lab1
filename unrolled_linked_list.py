@@ -199,7 +199,6 @@ class UnrolledLinkedList():
         state = initial_state
         currentNode = self.head
         while currentNode is not None:
-            state = function(state,currentNode.arr)
+            state = function(state, currentNode.arr)
             currentNode = currentNode.next
         return state
-
