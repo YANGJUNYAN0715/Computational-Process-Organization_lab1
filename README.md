@@ -18,20 +18,22 @@ class with `hello` and `add` features. Stateless.
 
 ## Features
 
-- test: `test_default_node_capacity`
-- test: `test_custom_node_capacity`
-- test: `test_empty`
+- PBT test: `test_default_node_capacity`
+- PBT test: `test_custom_node_capacity`
+- PBT test: `test_empty`
 - PBT test: `test_delete_item`
-- test: `test_get_item`
-- test: `test_set_item`
-- test: `test_iteration`
+- PBT test: `test_get_item`
+- PBT test: `test_set_item`
+- PBT test: `test_iteration`
 - PBT test: `test_len`
-- test: `test_member`
-- test: `test_variable`
-- test: `test_to_list`
-- test: `test_from_list`
+- PBT test: `test_member`
+- PBT test: `test_variable`
+- PBT test: `test_to_list`
+- PBT test: `test_from_list`
 - test: `test_filter`
 - PBT test: `test_concat`
+- test: `test_empty_function`
+- PBT test: `test_reduce`
 
 ## Contribution
 
@@ -48,7 +50,9 @@ Donghao Guo(guohaodong@hdu.edu.cn) -- runs the tests.
 - 24.04.2022 - 2
   - Modify the structure and update README.md
 - 06.05.2022 - 3
-  - Add some functions and use PBT tests and hypothesis tests
+  - Add functions of concat and filter, use PBT tests and hypothesis tests
+- 08.05.2022 - 4
+  - Add functions of empty and reduce, use PBT tests
 
 ## Design notes
 

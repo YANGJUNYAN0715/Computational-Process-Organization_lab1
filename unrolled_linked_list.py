@@ -146,7 +146,7 @@ class UnrolledLinkedList():
             return res
 
     def from_list(self, a):
-        L = UnrolledLinkedList()
+        L = self.empty()
         for e in a:
             L.append(e)
         return L
@@ -174,7 +174,8 @@ class UnrolledLinkedList():
         for i in self:
             if function(i):
                 L.append(i)
-        return L
+        self = L
+        return self
 
     def concat(self, other):
         temp = []
@@ -187,4 +188,18 @@ class UnrolledLinkedList():
         temp += other.to_list()
         temp.sort()
         res = self.from_list(temp)
-        return res
+        self = res
+        return self
+
+    def empty(self):
+        L = UnrolledLinkedList()
+        return L
+
+    def reduce(self, function, initial_state):
+        state = initial_state
+        currentNode = self.head
+        while currentNode is not None:
+            state = function(state,currentNode.arr)
+            currentNode = currentNode.next
+        return state
+
