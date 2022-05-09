@@ -180,9 +180,9 @@ class UnrolledLinkedList():
     def concat(self, other):
         temp = []
         if len(self.to_list()) == 0:
-            return self
-        if len(other.to_list()) == 0:
             return other
+        if len(other.to_list()) == 0:
+            return self
 
         temp += self.to_list()
         temp += other.to_list()

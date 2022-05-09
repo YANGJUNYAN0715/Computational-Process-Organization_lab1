@@ -53,6 +53,8 @@ Donghao Guo(guohaodong@hdu.edu.cn) -- runs the tests.
   - Add functions of concat and filter, use PBT tests and hypothesis tests
 - 08.05.2022 - 4
   - Add functions of empty and reduce, use PBT tests
+- 09.05.2022 - 5
+  - Repair a mistake in function of concat
 
 ## Design notes
 
