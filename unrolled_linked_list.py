@@ -247,7 +247,6 @@ class UnrolledLinkedList:
                 :return:
                 """
         # find all values that are not function result and then delete them
-        l = []
         for i in self:
             if not function(i):
                 l = self.findbyVal(i)

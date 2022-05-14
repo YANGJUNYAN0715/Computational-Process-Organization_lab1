@@ -152,7 +152,6 @@ class unrolled_linked_list_test(unittest.TestCase):
         L = UnrolledLinkedList()
         self.assertEqual(str(L.from_list(list1)), '{[%d, %d, %d]}' % (a, b, c))
 
-
     def test_filter(self):
         L = UnrolledLinkedList()
         L.append(1).append(2).append(3)
@@ -166,8 +165,6 @@ class unrolled_linked_list_test(unittest.TestCase):
         L = UnrolledLinkedList()
         L.append(1).append(2).append(3).append(1)
         self.assertEqual(str(L.findbyVal(1)), '[0, 3]')
-
-
 
     # PBT test
     @settings(max_examples=10)
@@ -190,14 +187,12 @@ class unrolled_linked_list_test(unittest.TestCase):
         L = UnrolledLinkedList().empty()
         self.assertEqual(str(L), '{}')
 
-
     # PBT test
     @settings(max_examples=10)
     @given(a=st.integers(), b=st.integers(), c=st.integers())
     def test_reduce(self, a, b, c):
         L = UnrolledLinkedList()
         self.assertEqual(L.reduce(_sum, 0), 0)
-
         L = UnrolledLinkedList()
         L = L.from_list([a, b, c])
         self.assertEqual(L.reduce(_sum, 0), a+b+c)
