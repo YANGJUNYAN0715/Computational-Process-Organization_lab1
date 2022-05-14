@@ -42,6 +42,7 @@ class unrolled_linked_list_test(unittest.TestCase):
         L = UnrolledLinkedList()
         self.assertEqual(str(L), "{}")
         L.append(a)
+
         del L[0]
         self.assertEqual(str(L), "{}")
 
@@ -151,11 +152,20 @@ class unrolled_linked_list_test(unittest.TestCase):
         L = UnrolledLinkedList()
         self.assertEqual(str(L.from_list(list1)), '{[%d, %d, %d]}' % (a, b, c))
 
+
     def test_filter(self):
         L = UnrolledLinkedList()
         L.append(1).append(2).append(3)
         self.assertEqual(str(L.filter(is_even)), '{[2]}')
+        L = UnrolledLinkedList()
+        L.append(1).append(2).append(3)
         self.assertEqual(str(L.filter(is_odd)), '{[1, 3]}')
+
+
+    def test_findbyVal(self):
+        L = UnrolledLinkedList()
+        L.append(1).append(2).append(3).append(1)
+        self.assertEqual(str(L.findbyVal(1)), '[0, 3]')
 
     # PBT test
     @settings(max_examples=10)
@@ -177,6 +187,7 @@ class unrolled_linked_list_test(unittest.TestCase):
     def test_empty_function(self):
         L = UnrolledLinkedList().empty()
         self.assertEqual(str(L), '{}')
+
 
     # PBT test
     @settings(max_examples=10)

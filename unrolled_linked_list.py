@@ -170,12 +170,22 @@ class UnrolledLinkedList():
         return self
 
     def filter(self, function):
-        L = UnrolledLinkedList()
+        #find all values that are not function result and then delete them
+        l = []
         for i in self:
-            if function(i):
-                L.append(i)
-        self = L
+            if not function(i):
+                l = self.findbyVal(i)
+                for j in l:
+                    self.__delitem__(j)
         return self
+
+    def findbyVal(self,val):
+        l = []
+        for index in range(self.length):
+            if self.__getitem__(index) == val:
+                l.append(index)
+        return l
+
 
     def concat(self, other):
         temp = []
