@@ -9,7 +9,8 @@ class UnrolledLinkedList:
         """
         Initialize
 
-        :param max_node_capacity: the maximum number of elements in each elements array
+        :param max_node_capacity: the maximum number of elements
+        in each elements array
         """
         self.max_node_capacity = max_node_capacity
         self.length = 0
@@ -240,7 +241,8 @@ class UnrolledLinkedList:
         """
         Filter data structure by specific predicate
 
-        :param function: the function which you want to use as the filter function
+        :param function: the function which you want to use
+        as the filter function
         :return:
         """
         L = UnrolledLinkedList()
