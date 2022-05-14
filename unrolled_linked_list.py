@@ -193,7 +193,7 @@ class UnrolledLinkedList:
 
         :return:
         """
-        res:list = []
+        res = [int]
         if self.head is None:
             return res
         else:
