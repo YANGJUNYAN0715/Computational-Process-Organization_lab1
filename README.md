@@ -31,6 +31,7 @@ class with `hello` and `add` features. Stateless.
 - PBT test: `test_to_list`
 - PBT test: `test_from_list`
 - test: `test_filter`
+- test: `test_findByValue`
 - PBT test: `test_concat`
 - test: `test_empty_function`
 - PBT test: `test_reduce`
@@ -39,7 +40,8 @@ class with `hello` and `add` features. Stateless.
 
 Junyan Yang(1310204834@qq.com) -- writes the main code of this lab
 
-Donghao Guo(guohaodong@hdu.edu.cn) -- runs the tests.
+Donghao Guo(guohaodong@hdu.edu.cn) -- runs the tests and writes
+some functions
 
 ## Changelog
 
@@ -48,15 +50,20 @@ Donghao Guo(guohaodong@hdu.edu.cn) -- runs the tests.
 - 18.04.2022 - 1
   - Pass the workflow
 - 24.04.2022 - 2
-  - Modify the structure and update README.md
+  - Modify the structure
+  - Update README.md
 - 06.05.2022 - 3
-  - Add functions of concat and filter, use PBT tests and hypothesis tests
+  - Add functions of concat and filter
+  - Use PBT tests and hypothesis tests
 - 08.05.2022 - 4
-  - Add functions of empty and reduce, use PBT tests
+  - Add functions of empty and reduce
+  - Use PBT tests
 - 09.05.2022 - 5
   - Repair a mistake in function of concat
 - 14.05.2022 - 6
-  - Add docstrings for all functions and add type hints
+  - Change function of filter into mutable
+  - Add function of findByValue
+  - Add docstrings for all functions and type hints
 
 ## Design notes
 

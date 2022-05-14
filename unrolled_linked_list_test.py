@@ -6,11 +6,11 @@ from hypothesis import given, settings
 from unrolled_linked_list import UnrolledLinkedList
 
 
-def is_even(x):
+def is_even(x: int) -> bool:
     return x % 2 == 0
 
 
-def is_odd(x):
+def is_odd(x: int) -> bool:
     return x % 2 == 1
 
 
@@ -155,7 +155,14 @@ class unrolled_linked_list_test(unittest.TestCase):
         L = UnrolledLinkedList()
         L.append(1).append(2).append(3)
         self.assertEqual(str(L.filter(is_even)), '{[2]}')
-        self.assertEqual(str(L.filter(is_odd)), '{[1, 3]}')
+        L1 = UnrolledLinkedList()
+        L1.append(1).append(2).append(3)
+        self.assertEqual(str(L1.filter(is_odd)), '{[1, 3]}')
+
+    def test_findByValue(self):
+        L = UnrolledLinkedList()
+        L.append(1).append(2).append(3).append(1)
+        self.assertEqual(str(L.findByValue(1)), '[0, 3]')
 
     # PBT test
     @settings(max_examples=10)
@@ -187,4 +194,4 @@ class unrolled_linked_list_test(unittest.TestCase):
 
         L = UnrolledLinkedList()
         L = L.from_list([a, b, c])
-        self.assertEqual(L.reduce(_sum, 0), a+b+c)
+        self.assertEqual(L.reduce(_sum, 0), a + b + c)
