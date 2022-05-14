@@ -55,6 +55,8 @@ Donghao Guo(guohaodong@hdu.edu.cn) -- runs the tests.
   - Add functions of empty and reduce, use PBT tests
 - 09.05.2022 - 5
   - Repair a mistake in function of concat
+- 14.05.2022 - 6 
+  - Add docstrings for all functions and add type hints
 
 ## Design notes
 
