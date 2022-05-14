@@ -161,7 +161,7 @@ class unrolled_linked_list_test(unittest.TestCase):
 
     def test_findByValue(self):
         L = UnrolledLinkedList()
-        L.append(1).append(2).append(3).append(1)
+        L.append(1).append(2).append(3).append(1).append(2)
         self.assertEqual(str(L.findByValue(1)), '[0, 3]')
 
     # PBT test
