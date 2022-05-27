@@ -1,57 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="xiaoxiong@192.168.1.138:22 (6)" remoteFilesAllowedToDisappearOnAutoupload="false">
-    <serverData>
-      <paths name="xiaoxiong@192.168.1.138">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$/../../../../../Deep_learning/Programme/HiXray-main" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="xiaoxiong@192.168.1.138:22">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/pycharm_project_846" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="xiaoxiong@192.168.1.138:22 (2)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/pycharm_project_887" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="xiaoxiong@192.168.1.138:22 (3)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/pycharm_project_412" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="xiaoxiong@192.168.1.138:22 (4)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/pycharm_project_295" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="xiaoxiong@192.168.1.138:22 (5)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/pycharm_project_213" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-      <paths name="xiaoxiong@192.168.1.138:22 (6)">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/tmp/pycharm_project_92" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
-    </serverData>
+  <component name="PublishConfigData" autoUpload="Always" remoteFilesAllowedToDisappearOnAutoupload="false">
     <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
